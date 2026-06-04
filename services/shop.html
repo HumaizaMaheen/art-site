@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crafterina_by_humaiza</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="../style/style.css"/>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md" data-bs-theme="dark">
+    <div class="container">
+      <a href="#" class="navbar-brand">
+        <img src="../src/images/logo.jpg" alt="Crafterina_by_humaiza"/>
+      </a>
+      <p id="logoname">crafterina_by_humaiza</p>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="main-menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="home.html" class="nav-link text-light">Home</a></li>
+          <li class="nav-item"><a href="shop.html" class="nav-link text-light">Shop</a></li>
+          <li class="nav-item"><a href="tutorials.html" class="nav-link text-light">Tutorials</a></li>
+          <li class="nav-item"><a href="cart.html" class="nav-link text-light">Cart</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+     <div class="content">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="../src/images/bggggg.png" alt="card-image" class="img-fluid">
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <p id="descrp">Polaroids</p>
+<div class="d-flex justify-content-end mb-3">
+  <div class="dropdown">
+    <button class="btn3 btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Sort by Price
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end">
+      <li><a class="dropdown-item" href="#" id="sort-low-high">Lowest to Highest</a></li>
+      <li><a class="dropdown-item" href="#" id="sort-high-low">Highest to Lowest</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="container my-4">
+  <input style="  border: 5px solid rgba(154, 192, 154, 0.6); 
+  box-shadow: none;transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;" type="text" id="search-box" placeholder="Search by title..." class="form-control" />
+</div>
+
+  <div class="container">
+    <div class="row" id="product-container">
+      <!-- Product cards  -->
+    </div>
+  </div>
+
+  <!--  Info Modal -->
+  <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="infoModalLabel">Artwork Info</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body" id="infoContent">
+          <!--populated dynamically -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="mt-5 text-light" style="background-color: rgba(72, 102, 72, 0.6); padding: 20px 0;">
+    <div class="container text-center">
+      <p class="mb-2">&copy; 2025 Crafterina_by_humaiza. All rights reserved.</p>
+      <p class="mb-2">
+        <a href="https://www.instagram.com/crafterina_by_humaiza" target="_blank" class="text-light text-decoration-none">
+          <img src="https://cdn-icons-png.flaticon.com/24/2111/2111463.png" alt="Instagram" style="width: 20px; vertical-align: middle; margin-right: 5px;">
+          @crafterina_by_humaiza
+        </a>
+      </p>
+      <p class="mb-0">📞 0304-5693322</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- ✅ Load shop.js (not cart.js!) -->
+  <script src="../JS/shop.js"></script>
+</body>
+</html>
