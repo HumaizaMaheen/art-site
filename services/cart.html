@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cart - Crafterina_by_Humaiza</title>
+  <link rel="stylesheet" href="../style/style.css"/>
+  <!-- Bootstrap & Font Awesome -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .cart-container {
+      max-width: 900px;
+      margin: 50px auto;
+    }
+
+    .cart-box {
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .title {
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    .qty-controls {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .cart-remove {
+      background: #dc3545;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 5px 10px;
+      font-size: 1rem;
+    }
+
+    .total-line {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      font-size: 1.2rem;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .btn-clear {
+      background-color: #dc3545;
+      color: white;
+    }
+
+    .btn-checkout {
+      background-color: #198754;
+      color: white;
+    }
+
+    #checkout-message {
+      display: none;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+ <nav class="navbar navbar-expand-md" data-bs-theme="dark">
+    <div class="container">
+      <a href="#" class="navbar-brand">
+        <img src="../src/F23BDOCS1M01044/logo.jpg" alt="Crafterina_by_humaiza"/>
+      </a>
+      <p id="logoname">crafterina_by_humaiza</p>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="main-menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="home.html" class="nav-link text-light">Home</a></li>
+          <li class="nav-item"><a href="shop.html" class="nav-link text-light">Shop</a></li>
+          <li class="nav-item"><a href="tutorials.html" class="nav-link text-light">Tutorials</a></li>
+          <li class="nav-item"><a href="cart.html" class="nav-link text-light">Cart</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <div class="content">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="../src/F23BDOCS1M01044/bggggg.png" alt="card-image" class="img-fluid">
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="container cart-container">
+  <h2 class="text-center mb-5">🛒 Your Cart</h2>
+
+  <!-- Cart Items -->
+  <div id="cart-items"></div>
+
+  <!-- Totals -->
+  <div class="total-line">
+    <div>
+      <div>Subtotal: Rs. <span id="subtotal">0</span></div>
+      <div><strong>Grand Total: Rs. <span id="grandtotal">0</span></strong></div>
+    </div>
+    <div>
+      <button onclick="clearCart()" class="btn btn-clear me-2">Clear Cart</button>
+      <button onclick="proceedToCheckout()" class="btn btn-checkout">Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <div id="checkout-message" class="text-success text-center mt-4"></div>
+</div>
+ <footer class="mt-5 text-light" style="background-color: rgba(72, 102, 72, 0.6); padding: 20px 0;">
+    <div class="container text-center">
+      <p class="mb-2">&copy; 2025 Crafterina_by_humaiza. All rights reserved.</p>
+      <p class="mb-2">
+        <a href="https://www.instagram.com/crafterina_by_humaiza" target="_blank" class="text-light text-decoration-none">
+          <img src="https://cdn-icons-png.flaticon.com/24/2111/2111463.png" alt="Instagram" style="width: 20px; vertical-align: middle; margin-right: 5px;">
+          @crafterina_by_humaiza
+        </a>
+      </p>
+      <p class="mb-0">📞 0304-5693322</p>
+    </div>
+  </footer>
+<!-- Cart JS -->
+<script src="../JS/cart.js"></script>
+</body>
+</html>
