@@ -1,0 +1,95 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "title": "Dreamy Sunset",
+      "price": 250,
+      "image": "src/images/sunset.jpg",
+      "artist": "Humaiza",
+      "story": "This piece was inspired by a calm evening after rain.",
+      "quantity": 5
+    },
+    {
+      "id": "2",
+      "title": "Foggy Forest",
+      "price": 350,
+      "image": "src/images/foggy.jpg",
+      "artist": "Humaiza",
+      "story": "This piece was inspired by a calm evening after rain.",
+      "quantity": 4
+    },
+    {
+      "id": "3",
+      "title": "Snowy House",
+      "price": 150,
+      "image": "src/images/house.jpg",
+      "artist": "Humaiza",
+      "story": "This piece was inspired by a calm evening after rain.",
+      "quantity": 5
+    },
+    {
+      "id": "4",
+      "title": "Snowy Evening",
+      "price": 450,
+      "image": "src/images/snowy evening.jpg",
+      "artist": "Humaiza",
+      "story": "This piece was inspired by a calm evening after rain.",
+      "quantity": 5
+    },
+    {
+      "id": "5",
+      "title": "Majestic Horse",
+      "price": 500,
+      "image": "src/images/horse.jpg",
+      "artist": "Humaiza",
+      "story": "This piece was inspired by a calm evening after rain.",
+      "quantity": 5
+    },
+    {
+      "id": "6",
+      "title": "Snow Scape",
+      "price": 200,
+      "image": "src/images/snow.jpg",
+      "artist": "Humaiza",
+      "story": "This piece was inspired by a calm evening after rain.",
+      "quantity": 5
+    },
+    {
+      "id": "7",
+      "title": "Seascape",
+      "price": 300,
+      "image": "src/images/seascape.jpg",
+      "artist": "Humaiza",
+      "story": "This piece was inspired by a calm evening after rain.",
+      "quantity": 5
+    },
+    {
+      "id": "8",
+      "title": "Tea Time",
+      "price": 400,
+      "image": "src/images/teapot.jpg",
+      "artist": "Humaiza",
+      "story": "This piece was inspired by a calm evening after rain.",
+      "quantity": 5
+    },
+    {
+      "id": "9",
+      "title": "hill",
+      "price": 350,
+      "image": "src/images/hill.jpg",
+      "artist": "Humaiza",
+      "story": "This piece was inspired by a calm evening after rain.",
+      "quantity": 5
+    }
+  ],
+  "cart": [
+    {
+      "id": "21a75b63-b528-49c5-9aae-31a49225072c",
+      "productId": "1",
+      "title": "Dreamy Sunset",
+      "price": 250,
+      "image": "src/images/sunset.jpg",
+      "qty": 1
+    }
+  ]
+}
